@@ -1,8 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import Main from "./Main";
 import "./index.css";
-ReactDOM.render(
+const container = document.getElementById("root")
+const root = createRoot(container)
+root.render(
   <Main/>,
-  document.getElementById("root")
+
 );
+// https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
+// https://www.codingdeft.com/posts/react-dom-render-not-supported-react-18/
